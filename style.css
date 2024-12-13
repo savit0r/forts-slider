@@ -226,8 +226,19 @@ header a{
     overflow: hidden;
     animation: showThumbnail 0.5s linear 1 forwards;
 }
-@keyframes showThumbil {
+@keyframes showThumbnail {
     to{
         width: 150px;
+    }
+}
+
+.carousel.next .thumbnail{
+    transform: rotateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+} 
+
+@keyframes transformThumbnail{
+    to{
+        transform: translate(0);
     }
 }
